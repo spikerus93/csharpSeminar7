@@ -7,7 +7,7 @@
 
 //  Запятая указавает какой массив - это Двумерный массив
 
-const int rows = 3;
+const int rows = 5;
 const int columns = 4;
 
 int[,] GetRandomMatrix(int rows, int columns)
@@ -32,8 +32,9 @@ void PrintMatrix(int[,] matrix)
         {
             Console.Write($"{matrix[i, j]}\t ");
         }
+        Console.WriteLine();
     }
 }
 int[,] myMatrix = GetRandomMatrix(rows, columns);
-Console.WriteLine(string.Join(", ", myMatrix));
+// Console.WriteLine(string.Join(", ", myMatrix));
 PrintMatrix(myMatrix);

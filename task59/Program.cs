@@ -59,13 +59,13 @@ int[,] RemoveRespectiveRowAndColumn(int[,] matrix, int[] ArrayToRemove)
     {
         if (i == ArrayToRemove[0])
         {
-             iShift++;
-        }         
+            iShift++;
+        }
         for (int j = 0; j < matrixReduced.GetLength(1); j++)
         {
             if (j == ArrayToRemove[1])
 
-            jShift++;
+                jShift++;
 
             matrixReduced[i, j] = matrix[i + iShift, j + jShift];
         }
